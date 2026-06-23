@@ -14,5 +14,4 @@ class Node{
 
 int main(){
    
-} 
-    noe
+}
