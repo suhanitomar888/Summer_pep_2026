@@ -66,3 +66,45 @@ public:
 };
 */
 
+//Question:
+//int arr[]={3,5,1,12,36,32,4}; key=12
+//find that key in array using linear search
+//if the key is found and value of key is >10
+//then return double the of the key
+//otherwise return the half value of the key
+/*
+#include <iostream>
+using namespace std;
+int main(){
+    int arr[]={3,5,1,12,36,32,4};
+    int key=12;
+
+    int n = sizeof(arr) / sizeof(arr[0]);
+
+    for (int i = 0; i < n; i++) {
+        if (arr[i] == key) {
+            if (key > 10) {
+                cout << key * 2;
+            } else {
+                cout << key / 2;
+            }
+        }
+    }
+}
+*/
+
+/*Time complexity -> how much time an algo takes as input size increases
+
+Big O -> represents the upper bound of running time, it gives the worst case scenario of an algorithm,
+it describes the maximum time an algorithm can take
+
+Big O(1) -> when input is known and the time taken is constant, it does not depend on input size
+Big O(n) -> linear time - the time grows directly proportional to input size
+for(int i=0;i<n;i++){
+    for(int j=0;j<5;j++){
+        //code
+    }
+}
+    tc=O(n*5) = O(n) -> linear time
+
+*/
