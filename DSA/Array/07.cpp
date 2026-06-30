@@ -62,4 +62,46 @@ bool isSorted(int arr[], int n){
     }
     return isSorted(arr,n-1);
 }
- 
+
+// 2D- Array
+//traversal
+int[3][4]
+for(int i=0;i<3;i++){
+    for(int j=0;j<4;j++){
+        cin>>arr[i][j];
+    }
+//     for(int i=0;i<3;i++){
+//         for(int j=0;i<34;i++){
+//             cin>>arr[j][i];
+//         }
+//     }
+// }
+
+for(int i=0;i<3;i++){
+    for(int j=0;j<4;j++){
+        cout<<arr[i][j]<<" ";
+    }
+    cout<<endl;
+}
+
+//print all the columns in the even columnn of the 2 array
+void printEvenColumn(int arr[4][4],int row,int col){
+    for(int i=0;i<row;i++){
+        for(int j=0;j<col;j++){
+            if(j%2==0){
+                cout<<arr[i][j]<<" ";
+            }
+        }
+    }
+}
+//print all emements in the odd row of the 3D arr;
+void printOddColumn(int arr[4][4],int row,int col){
+    int main(){
+        for(int i=0;i<row;i++){
+            for(int j=0;j<row;j++){
+                if(j%2!=0);
+                cout<<arr[i][j];<<" ";
+            }
+        }
+    }       
+}
