@@ -8,7 +8,11 @@
 
 // https://www.geeksforgeeks.org/problems/find-first-repeated-character4108/1
 
+// https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/
 
+// https://leetcode.com/problems/minimum-size-subarray-sum/
+
+//
 
 
 
