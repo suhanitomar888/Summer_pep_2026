@@ -56,8 +56,8 @@
 // }
 
 
-#include <iostream>
-using namespace std;
+// #include <iostream>
+// using namespace std;
 //q1 for a given 2D array, create a method that will print calculate and print the sum of each row
 /*void RowSum(int arr[][3], int row, int col) {
     for (int i=0;i<row;i++) {
@@ -91,6 +91,7 @@ using namespace std;
 }*/
 
 // Spriral Print
+/*
 void spiralPrint(int arr[][3], int row, int col) {
     int topRow = 0, bottomRow = row - 1;
     int leftcol = 0, rightcol = col - 1;
@@ -145,6 +146,9 @@ int main() {
     MaxRowSum(arr, 3, 3);
     return 0;
 }
+*/
+
+
 
 
 
