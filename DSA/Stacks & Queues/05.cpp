@@ -1,3 +1,9 @@
+//nge, nse, pge, pse
+//nge-1 lc496, lc 84 
+
+
+
+
 // https://www.geeksforgeeks.org/problems/interleave-the-first-half-of-the-queue-with-second-half/1
 /*
 class Solution {
@@ -45,6 +51,7 @@ class Solution {
 */
 
 // prefix
+/*
 #include<iostream>
 #include<stack>
 using namespace std;
@@ -96,6 +103,5 @@ int prefixEval(string s)
             }
         }
     }
-
-
 }
+*/
