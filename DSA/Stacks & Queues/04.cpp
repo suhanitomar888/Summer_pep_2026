@@ -57,16 +57,16 @@ void deleteMiddle(stack<int>&inputStack, int N){
 */
 
 // https://leetcode.com/problems/min-stack/description/
-
-void push(int value){
-    minstack.push(val);
-    f(minStack.empty() || val <= midStack.top()){
-        minStack.push(val);
+/*
+mainSt.push(value){
+        if(minStack.empty() || value<=minStack.top()){
+            minStack.push(value);
+        }
+        else{
+            minStack.push(minStack.top());
+        }
     }
-    else{
-
-    }
-}
+*/
 
 //implement queue using stack
 //stack using queue
