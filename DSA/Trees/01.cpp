@@ -3,8 +3,8 @@ public:
     int data;
     Node*left;
     Node*right;
-    Node(int data){
-        this->data=data;
+    Node(int val){
+        data=val;
         left=NULL;
         right=NULL;
     }
