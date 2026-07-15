@@ -1,29 +1,63 @@
 #include<iostream>
 using namespace std;
+
 class MyStack{
-    void push(int val){
-        top++;
+    int *arr;
+    int top;
+    int size;
+
+    MyStack(int size){
+        this->size = size;
+        arr = new int[size];
+        top = -1;
     }
+
+    void push(int val){
+        if(top == size -1){
+            cout << "Stack overflow " << endl;
+            return;
+        }
+        top++;
+        arr[top] = val;
+    }
+
     void pop(){
-        if(top== -1){
-            cout<<"Stack Underflow"<<endl;
+        if(top == -1){
+            cout << "Stack underflow " << endl;
             return;
         }
         top--;
     }
 
-    bool isEmpty(){
-        if(top==-1){
+    //bool isempty
+    bool isempty(){
+        if(top == -1){
             return true;
         }
         return false;
     }
 
+    //peek
     void peek(){
-        cout<<arr[top]<<endl;
+        if(top == -1){
+            cout << "Stack is empty " << endl;
+            return;
+        }
+        cout << arr[top] << endl;
     }
 
-    void size(){
-        cout<<top+1<<endl;
+    //size
+    void getsize(){
+        cout << "Size of stack is: " << top + 1 << endl;
     }
+
 };
+
+int main(){
+    MyStack s(5);
+    s.push(5);
+    s.push(15);
+    s.push(20);
+    s.push(25);
+    s.push(30);
+}
