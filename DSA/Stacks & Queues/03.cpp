@@ -64,10 +64,4 @@ void reverseString(string str){
         st.pop();
     }
 }
-//20 lc
-//Valid Parentheses
-//help me with the logic
-// So what we do in this question is we will use stack to check if the parentheses are valid or not
-// we will push the opening parentheses in the stack and when we encounter the closing parentheses 
-//we'll check if the top of the stack is the corresponding opening parentheses or not if it is then we'll pop it otherwise we'll return false
-void validParentheses(string str)
+//20 lc- Valid Parentheses
