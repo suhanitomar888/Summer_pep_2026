@@ -30,3 +30,8 @@ int main(){
     root->left->right=new Node(5);
 
 }
+
+// https://www.geeksforgeeks.org/problems/height-of-binary-tree/1
+// https://www.geeksforgeeks.org/problems/sum-of-binary-tree/1
+// https://leetcode.com/problems/sum-of-left-leaves/
+// https://leetcode.com/problems/same-tree/description/
