@@ -9,6 +9,8 @@ public:
         right=NULL;
     }
 };
+
+
 //Level Order Traversal
 void leverOrder(Node*root){
     if(root==NULL)return;
