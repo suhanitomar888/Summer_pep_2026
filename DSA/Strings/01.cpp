@@ -1,11 +1,9 @@
 #include<iostream>
 #include<string>
-
 using namespace std;
 
 //using pointers
-
-string reverseString(string str){
+string reverseString(string s){
     // int a= str.begin();
     // int b= str.end()-1;
     // while(a<b){
@@ -15,16 +13,15 @@ string reverseString(string str){
     // }
     // return str;
 
-    int l=0, r=s.length()-1;
+    int l=0;
+    int r=s.size()-1;
     while(l<r){
-        swap(s[l++],s[r++]);
+        swap(s[l],s[r]);
         l++;
         r--;
     }
 }
 int main(){
-    string str="Hello";
-    cout<<reverseString(str)
-];
-
+    string s="Hello";
+    cout<<reverseString(str);
 }

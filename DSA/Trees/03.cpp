@@ -30,3 +30,16 @@ void leverOrder(Node*root){
         q.push(NULL);
     }
 }
+
+void levelOrderTraversal(Node*root){
+    if(root==NULL)return;
+    queue<Node>*q;
+    q.push(root->data);
+    q.push_back(NULL);
+    while(!q.empty()){
+        Node*fn=q.front();
+        cout<<fn->data<<" ";
+        if(fn->left)q.push(fn->l);
+    }
+}
+
