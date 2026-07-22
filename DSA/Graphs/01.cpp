@@ -14,8 +14,6 @@ public:
         int V =adj.size();
         vector<int> bfsResult; //store the bfs traversal
         vector<bool> visited(V, false); // keep track of visited nodes
-        
-        
         queue<int>q;
         //start bfs for node 0
         q.push(0);
@@ -39,3 +37,36 @@ public:
         return bfsResult;
     }
 };*/
+
+// (DFS) https://www.geeksforgeeks.org/problems/depth-first-traversal-for-a-graph/1
+/*
+//create a visited array to keep track of visite nodes
+//start dfs from node 0
+//mark current node as visited and add it to the answer
+//visit all unvisited neighbour recursilvely
+//when all recursive clls finish, return the dfs traversal
+
+class Solution {
+  public:
+  
+    void dfsHelper(int node,vector<vector<int>>&adj,vector<bool>&visited,vector<int>&result){
+        //mark the current node a visited
+        visited[node]=true;
+        //add the current node to answer
+        result.push_back(node);
+        //visit all unvisited neighbour
+        for(auto neighbour: adj[node]){
+            if(!visited[neighbour]){
+                dfsHelper(neighbour, adj, visited, result);
+            }
+        }
+    }
+    vector<int> dfs(vector<vector<int>>& adj) {
+        int V= adj.size();
+        vector<bool> visited(V, false);
+        vector<int>result;
+        dfsHelper(0, adj, visited, result);
+        return result;
+    }
+};
+*/
