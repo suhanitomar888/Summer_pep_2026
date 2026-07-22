@@ -20,8 +20,9 @@ string reverseString(string s){
         l++;
         r--;
     }
+    return s;
 }
 int main(){
-    string s="Hello";
-    cout<<reverseString(str);
+    string s="hehehe lololo";
+    cout<<reverseString(s);
 }
