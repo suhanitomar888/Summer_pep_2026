@@ -77,11 +77,11 @@ class Solution {
 public:
 
     void dfsHelper(int city, vector<vector<int>>& isConnected, vector<bool>& isVisited) {
-        isVisited[node] = true;
+        isVisited[city] = true;
 
         for (int neighbour = 0; neighbour < isConnected.size(); neighbour++) {
-            if (isConnected[node][neighbour] == 1 && !visited[neighbour]) {
-                dfsHelper(neighbour, isConnected, visited);
+            if (isConnected[city][neighbour] == 1 && !isVisited[neighbour]) {
+                dfsHelper(neighbour, isConnected, isVisited);
             }
         }
     }
@@ -94,6 +94,7 @@ public:
         for(int i=0;i<n;i++){
             if(!isVisited[i]){
                 //dfsHelper
+                dfsHelper(i, isConnected, isVisited);
                 provinceCount++;
             }
         }
